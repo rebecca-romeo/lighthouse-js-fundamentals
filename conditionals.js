@@ -41,4 +41,22 @@ if (temperature < 0) {
 
 console.log("Now you're ready to go outside!");
 
+// Logical Operators
 
+// the example prints nothing because there is no else statement
+const isCitizen = true;
+const age = 17;
+
+if (isCitizen && age > 18) {
+  console.log("You are eligible to vote.");
+}
+
+// also prints nothing, since temperature is defined above as 15. Must be below -40 or above 40 to print
+if (temperature < -40 || temperature > 40) {
+  console.log("Maybe going outside isn't such a great idea…");
+}
+
+// in my previous code, raining = false. Which means this condition is true and the statement will be printed
+if (!raining) {
+  console.log("Leave your umbrella at home!");
+}
